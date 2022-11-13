@@ -13,6 +13,11 @@ function hideImage(id, color, special1, special2) {
     }
 }
 
+function moveTop(up, down) {
+  document.getElementById(up).style.zIndex = "10";
+  document.getElementById(down).style.zIndex = "-1";
+}
+
 function endDemo() {
     document.getElementById("profile").style.visibility = "hidden";
     document.getElementById("welcome").style.visibility = "visible";

@@ -25,6 +25,19 @@ img {
     background-color: #33844e;
 }
 
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 100px;
+  background-color: black;
+  z-index: 100;
+  padding: 0;
+  border: none;
+}
+
 .loader {
     border: 5px solid #ffffff; 
     border-top: 5px solid #33844e; 
