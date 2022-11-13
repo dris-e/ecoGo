@@ -13,7 +13,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 100vh;
+    height: 90vh;
     animation: visibility 1s linear;
 }
 
