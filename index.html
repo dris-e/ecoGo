@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecoGo - Recycling made easy.</title>
+    <link rel="icon" type="image/png" href="images/ecogofavicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    <img id="profile" src="images/profile.png"> <!-- onclick="endDemo()" -->
+    <img id="notifications" src="images/notifications.png" onclick="hideImage('notifications')">
+    <img id="searchweb" src="images/searchweb.png" onclick="hideImage('searchweb', '#e6e6e', 'notifications', 'profile')">
+    <canvas id="canvas"></canvas>
+    <video autoplay="true" id="video"></video>
+    <img id="scanweb" src="images/scanweb.png" ondblclick="scan(1)">
+    <img id="leaderboard" src="images/leaderboard.png" onclick="hideImage('leaderboard', 'black'); scan(0)">
+    <img id="dashboard" src="images/dashboard.png" onclick="hideImage('dashboard')">
+    <img id="loading" src="images/loadingweb.png">
+    
+    <img id="welcome" src="images/welcome.png" onclick="hideImage('welcome', '#e6e6e6')">
+    <img id="demoweb" src="images/demoweb.png" onclick="hideImage('demoweb')">
+    <div id="background" class="background"></div>
+</body>
+</html>

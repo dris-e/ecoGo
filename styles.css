@@ -1,0 +1,76 @@
+body{
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    animation: visibility 1s linear;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
+    position: absolute;
+    background-color: #33844e;
+}
+
+.loader {
+    border: 5px solid #ffffff; 
+    border-top: 5px solid #33844e; 
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 2s linear, hideAnimation 0s ease-in 2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 52%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  #loading {
+    animation: hideAnimation 0s ease-in 2.1s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+  }
+
+  @keyframes hideAnimation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  video, canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 1170px;
+  }
+
+  #canvas {
+      top: 40%;
+      height: auto;
+      z-index: -1;
+  }
+
+  #searchweb, #notifications, #profile {
+      visibility: hidden;
+  }
